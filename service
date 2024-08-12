@@ -1,0 +1,19 @@
+  <p class="service-p">What i offer</p>
+        <h1 class="service-heading">My Services</h1>
+        <div class="service-container">
+            <div class="service-box-list" data-aos="zoom-in" data-aos-duration="2000">
+                <img class="service-img" src="./assets/web-design.png" alt="">
+                <h1 class="service-title">Web Design.</h1>
+                <p class="service-desc">Web development is the process of building, programming...</p>
+            </div>
+            <div class="service-box-list" data-aos="zoom-in" data-aos-duration="2000">
+                <img class="service-img" src="./assets/ui-design.png" alt="">
+                <h1 class="service-title">UI Design.</h1>
+                <p  class="service-desc">UI design is the process of creating visual elements...</p>
+            </div>
+            <div class="service-box-list" data-aos="zoom-in" data-aos-duration="2000">
+                <img class="service-img" src="./assets/frontend.png" alt="">
+                <h1 class="service-title">Front-End Developer.</h1>
+                <p  class="service-desc">Web development is the process of building, programming...</p>
+            </div>
+        </div>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <nav >
+        <a class="logo" href="/">K<big>V</big>R</a>
+        <ul class="nav-list-items" data-aos="fade-down" data-aos-delay="100" data-aos-duration="1000">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#service">Service</a></li>
+            <li><a href="#my-work">My Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a class="contact" href="#contact">Contact  <i class="fa-solid fa-arrow-right fa-beat-fade"></i></a>
+        <div onclick="menu() " class="menubar">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+    <!-- home page -->
+     <section id="home">
+       <div class="profile" data-aos="zoom" data-aos-delay="500" data-aos-duration="1000" >
+        <img class="profile-img" src="./assets/kvr pic.jpg">
+       </div>
+       <h3 class="name">Hi! I'm Vijendar Reddy Kotte </h3>
+       <h2 class="role">Front-End Developer.</h2>
+       <p class="disc">Front-end developer trained in JSpiders Hyderabad.</p>
+       <div class="btns">
+        <button class="btn contact-btn" onclick="contact()" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">Contact Me <i class="fa-solid fa-arrow-right"></i></button>
+        <button class="btn resume-btn" onclick="cv()" data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000">My Resume <i class="fa-solid fa-download"></i> </button>
+       </div>
+       <i   class="fa-solid fa-angles-down fa-bounce "></i>
+       <p  class="scroll">scroll down</p>
+     </section>
+     <!-- about -->
+      <section id="about" >
+        <div class="about-intro" data-aos-delay="500" data-aos="fade-down" data-aos-duration="1000">
+            <p class="intro">Introduction</p> 
+            <h2 class="title">About Me</h2> 
+        </div>
+        <div class="about-container" >
+            <img class="about-image" src="./assets/about.jpg" data-aos="zoom-in" data-aos-duration="2000" 
+            data-aos-delay="500">
+            <div class="about-desc">
+                <p class="desc" data-aos="flip-up" data-aos-duration="1000">I am a front-end developer with a passion for creating visually appealing and user-friendly websites. I have a strong foundation in <span class="skills">HTML, CSS, JavaScript and React JS</span> and Iam always looking to improve my skills and learn new technologies.</p>
+                <div class="about-skills">
+                    <div class="languages" data-aos="fade-right " data-aos-duration="2000">
+                        <img class="about-detais" src="./assets/languages.png" alt="">
+                        <p class="about-p">HTML,CSS,JavaScript,ReactJS, Taiwind CSS</p>
+                    </div>
+                    <div class="education" data-aos="fade-up" data-aos-duration="2000">
+                        <img class="about-detais" src="./assets/eduaction.png" alt="">
+                        <p class="about-p">B.Tech,Sree Chaitanya College of Engineering,Karimnagar</p>
+                    </div>
+                    <div class="Projects" data-aos="fade-left" data-aos-duration="2000">
+                        <img class="about-detais" onclick="projects()" src="./assets/projects.png" alt="">
+                        <p class="about-p">build more then 5 Projects...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+      <!-- service -->
+       
+      <section id="service">
+        <p class="service-p">What i offer</p>
+        <h1 class="service-heading">My Services</h1>
+        <div class="service-container">
+            <div class="service-box-list" data-aos="zoom-in" data-aos-duration="2000">
+                <img class="service-img" src="./assets/web-design.png" alt="">
+                <h1 class="service-title">Web Design.</h1>
+                <p class="service-desc">Web development is the process of building, programming...</p>
+            </div>
+            <div class="service-box-list" data-aos="zoom-in" data-aos-duration="2000">
+                <img class="service-img" src="./assets/ui-design.png" alt="">
+                <h1 class="service-title">UI Design.</h1>
+                <p  class="service-desc">UI design is the process of creating visual elements...</p>
+            </div>
+            <div class="service-box-list" data-aos="zoom-in" data-aos-duration="2000">
+                <img class="service-img" src="./assets/frontend.png" alt="">
+                <h1 class="service-title">Front-End Developer.</h1>
+                <p  class="service-desc">Web development is the process of building, programming...</p>
+            </div>
+        </div>
+      </section>
+      <!-- my work  -->
+      <section id="my-work" >
+        <p class="work-my">My portfolio</p>
+        <h1 class="work-title" data-aos="zoom-in" data-aos-duration="2000">My Latest Work</h1>
+        <p class="work-desc">Welcome to my web development portfolio! Explore a collection of projects showcasing my expertise in front-end development.</p>
+        <div class="work-imgs" >
+            <div class="work-img-details" data-aos="fade-up-right" data-aos-duration="2000" onclick="p1()">
+                <img class="work-img" src="./assets/imageApp.png" >
+                <div class="work-name">
+                    <h1>Search Engine Application</h1>
+                </div>
+            </div>
+            <div class="work-img-details" data-aos="fade-down" data-aos-duration="2000" onclick="p2()">
+                <img class="work-img" src="./assets/Calculator.png" alt="">
+                <div  class="work-name">
+                    <h1>Calculator</h1>
+                </div>
+            </div>
+            <div class="work-img-details" data-aos="fade-left" data-aos-duration="2000" onclick="p3()">
+                <img class="work-img" src="./assets/DigitalClock.png" alt="">
+                <div  class="work-name">
+                    <h2>DigitalClock</h2>
+                </div>
+            </div>
+            <div class="work-img-details" data-aos="fade-up-right" data-aos-duration="2000" onclick="p4()">
+                <img class="work-img" src="./assets/QR.png" alt="">
+                <div  class="work-name">
+                    <h1>QR Code Generator</h1>
+                </div>
+            </div>
+            <div class="work-img-details" data-aos="fade-left" data-aos-duration="2000" onclick="p5()">
+                <img  class="work-img" src="assets/stop-watch.png" alt="">
+                <div  class="work-name">
+                    <h2>Stop Watch</h2>
+                </div>
+            </div>
+        </div>
+        <button class="work-more"><a href="/">Show More &nbsp; <i class="fa-solid fa-arrow-right fa-beat-fade"></i> </a></button>
+      </section>
+
+      <!-- Contact  -->
+       <section id="contact">
+        <p1>Connect with me</p1>
+        <h1>Get in touch</h1>
+        <p>I'd love to hear from you! If you have any questions, comments or feedback, please use the form below</p>
+        <form >
+            <div class="input-box">
+                <input type="text" class="username" placeholder="Enter Your Name">
+                <input type="text" class="email" placeholder="Enter Your Email">
+            </div>
+            <textarea placeholder="Enter your message" class="message" cols="60" rows="15"></textarea>
+            <button class="submit-btn"><a href="/">Submit &nbsp; <i class="fa-solid fa-arrow-right fa-beat-fade"></i> </a></button>
+        </form>
+       </section>
+
+       <section class="footer">
+        <div class="container-footer">
+            <a class="logo logo-footer" href="/">K<big>V</big>R</a>
+            <h2 class="mail">vijendarreddykotte@gmail.com</h2>
+        </div>
+        <hr class="hr">
+        <div class="copy-right">
+            <h2>© 2024 Vijendarreddy Kotte. All rights reserved.</h2>
+            <div class="social-media">
+                <a href="https://github.com/Vijendarreddy312">Github</a>
+                <a href="https://www.linkedin.com/in/vijendar-reddy-kotte-4033b42a3">Linkdin</a>
+                <a href="https://www.instagram.com/vijendar__reddy_312?igsh=MXM2czBodGgwbGo3Mw==">Instagram</a>
+            </div>
+        </div>
+       </section>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- aos animations links -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init()
+    </script>
+
+    <!-- javascript -->
+     <script src="./script.js"></script>
+</body>
+</html>
